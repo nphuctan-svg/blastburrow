@@ -2,9 +2,7 @@
 
 An original pixel-art bomb-grid adventure for desktop and mobile browsers. Clear the burrows solo, share a keyboard with a friend, or invite up to three friends to a private online room.
 
-**[Play online](https://burrow-brigade.merecabin4.chatgpt.site/)**
-
-The hosted edition may still display the original title, Burrow Brigade.
+**[Play online](https://blastburrow.merecabin4.chatgpt.site/)**
 
 ## Play locally
 
