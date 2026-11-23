@@ -1,0 +1,22 @@
+services:
+  game:
+    build: .
+    environment:
+      PUBLIC_ORIGIN: "https://${BURROW_DOMAIN:?Set BURROW_DOMAIN to the game hostname}"
+    volumes:
+      - burrow-state:/app/data
+    restart: unless-stopped
+  https:
+    image: caddy:2
+    environment:
+      BURROW_DOMAIN: "${BURROW_DOMAIN:?Set BURROW_DOMAIN to the game hostname}"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-state:/data
+    restart: unless-stopped
+volumes:
+  burrow-state:
+  caddy-state:

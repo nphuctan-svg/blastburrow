@@ -1,0 +1,8 @@
+node_modules
+dist
+data
+qa
+.git
+.DS_Store
+**/.DS_Store
+**/._*

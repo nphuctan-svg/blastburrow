@@ -1,0 +1,14 @@
+node_modules/
+dist/
+data/
+qa/
+.DS_Store
+._*
+/deploy/
+/progress.md
+/IDEA.md
+/:memory:
+*.sqlite
+*.sqlite-*
+.env
+.env.*

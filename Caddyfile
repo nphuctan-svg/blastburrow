@@ -1,0 +1,4 @@
+{$BURROW_DOMAIN} {
+    encode zstd gzip
+    reverse_proxy game:4317
+}
